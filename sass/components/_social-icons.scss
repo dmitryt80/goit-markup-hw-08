@@ -1,0 +1,27 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
