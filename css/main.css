@@ -30,6 +30,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 body {
@@ -50,6 +51,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -70,10 +72,35 @@ img {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .card-set {
@@ -82,6 +109,11 @@ img {
   padding: 0;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.card-set__item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .logo {
@@ -732,23 +764,47 @@ textarea:focus {
 
 .main-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.block-item:not(:last-child) {
-  margin-right: 30px;
+.main-block {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-block {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__block-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__block-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__block-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .features__block-item {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .features__block-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -759,6 +815,12 @@ textarea:focus {
 
 .section-what-we-do {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1198px) {
+  .section-what-we-do {
+    display: none;
+  }
 }
 
 .what-we-do {
@@ -814,6 +876,16 @@ textarea:focus {
   padding: 0;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.team__item {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .team__item:not(:last-child) {

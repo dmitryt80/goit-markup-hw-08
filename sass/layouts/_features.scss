@@ -15,23 +15,44 @@
 
 .main-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.block-item:not(:last-child) {
-  margin-right: 30px;
+.main-block {
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  display: flex;
+  justify-content: center;
+}
+
+.features__block-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .features__block-item {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.features__block-item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+.features__block-item {
+  width: 100%;
 }
 
 .features__block-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
