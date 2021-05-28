@@ -34,14 +34,14 @@
 }
 
 .features__block-item {
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 .features__block-item {
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
 
