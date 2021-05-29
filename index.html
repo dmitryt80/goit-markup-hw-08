@@ -12,20 +12,26 @@
 </head>
 <body>
    <!--Шапка сайта-->
-<!-- <header class="page-header">
+ <header class="page-header">
 <div class="container">   
 <nav class="nav header__nav">
 <a class="logo header__logo" href="/">
  <span class="logo-blue header__logo-blue--color">Web</span>Studio
 </a>
+<button type="button" class="mobile-menu__button" data-mobile-menu__button aria-expanded="false">
+<svg class="mobile-menu__button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+ <use class="mobile-menu__button-icon-burger" href="./images/icons/sprite.svg#icon-menu"></use>
+ <use class="mobile-menu__button-icon-cross" href="./images/icons/sprite.svg#icon-cross"></use>   
+</svg>    
+</button>
 <ul class="menu list">
     <li class="menu__item" ><a href="./index.html" class="menu__link--current">Студия</a></li>
     <li class="menu__item" ><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
     <li class="menu__item" ><a href="" class="menu__link">Контакты</a></li>
 </ul>
-</nav>  -->
+</nav> 
 <!--Список с почтой и номером телефона-->
-<!-- <ul class="contacts list">
+ <ul class="contacts list">
     <li class="contacts__item">
         <a class="contacts__link contacts-e" href="mailto:info@devstudio.com">
 <svg class="contacts__icon" width="16" height="12">
@@ -39,9 +45,19 @@
  </svg>   +380961111111 </a> </li>
 </ul>
 </div>    
-</header> -->
-
-<!-- Блок Герой-->
+</header>
+<!--Мобильное меню-->
+<div class="mobile-menu" data-menu>
+<ul class="mobile-menu__nav-item">
+ <li class="mobile-menu__nav-item">
+<a class="mobile-menu__nav-link--current" href="./index.html">Студия</a>     
+ </li>
+ <li class="mobile-menu__nav-item"></li>
+ <li class="mobile-menu__nav-item"></li>   
+</ul>
+<div></div>    
+</div>
+<!--Блок Герой-->
  <main>
     <section class="hero">
 <div class="container">        
