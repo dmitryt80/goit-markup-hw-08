@@ -38,10 +38,10 @@
   right: 3%;
 }
 
-.mobile-menu__button .is-open .icon-cross {
+.mobile-menu__button.is-open.icon-cross {
   display: block;
 }
 
-.mobile-menu__button .is-open .icon-menu {
+.mobile-menu__button.is-open.icon-menu {
   display: none;
 }
