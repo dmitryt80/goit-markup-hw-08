@@ -14,11 +14,17 @@ rel="stylesheet"/>
 <body>
 <!--Шапка сайта-->
 <header class="page-header">
-    <div class="container">
+    <div class="container header__container">      
     <nav class="nav header__nav">
         <a class="logo header__logo" href="/">
            <span class="logo-blue header__logo--color">Web</span>Studio
         </a>
+<button type="button" class="mobile-menu__button" data-menu-button aria-expanded="false">
+    <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="menu-button__icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+        <use class="menu-button__icon-cross" href="./images/icons/sprite.svg#icon-cross"></use>
+    </svg>
+</button>
         <ul class="menu list">
             <li class="menu__item"><a href="./index.html" class="menu__link">Студия</a></li>
             <li class="menu__item"><a href="./portfolio.html" class="menu__link--current">Портфолио</a></li>
@@ -39,7 +45,50 @@ rel="stylesheet"/>
 </svg> +380961111111 </a></li>
     </ul>
   </div>  
-</header>
+</header> 
+<!--Мобильное меню-->
+<div class="mobile-menu" data-menu>
+    <ul class="list mobile-menu__nav">
+        <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link--current" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link" href="#">Контакты</a>
+        </li>
+    </ul>
+    <div class="mobile-menu__contacts-wrapper">
+        <ul class="list mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item--phone">
+                <a class="link mobile-menu__contacts-link--phone" aria-label="Телефон"
+                    href="tel:+380961111111">+380961111111</a>
+            </li>
+            <li class="mobile-menu__contacts-item--mail">
+                <a class="link mobile-menu__contacts-link--mail" aria-label="Электронная почта"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="list mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="https://www.instagram.com">Instagram</a>
+            </li>
+            <span class="mobile-menu__socials-decore"></span>
+            <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="https://www.twitter.com">Twitter</a>
+            </li>
+            <span class="mobile-menu__socials-decore"></span>
+            <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="https://www.facebook.com">Facebook</a>
+            </li>
+            <span class="mobile-menu__socials-decore"></span>
+            <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="https://www.linkedin.com">Linkedin</a>
+            </li>
+        </ul>
+    </div>
+</div>
 <main>
   <!--Секция фильтр с кнопками-->
   <section class="section-portfolio"> 
@@ -54,7 +103,14 @@ rel="stylesheet"/>
 <!--Секция Портфолио-->
 <ul class="list card-set">
     <li class="card-set__item"><article class="card"><a href="" class="card__link">
-<div class="card-thumb"><img src="./images/img.jpg" alt="Веб-сайт Технокряк" width="370">
+<div class="card-thumb">
+ <picture>
+  <source srcset="./images/desctop/portfolio/portfolio1.webp 1x, ./images/desctop/portfolio/portfolio1@2x.webp 2x"
+   media="(min-width: 1200px)" type="image/webp">
+ <source srcset="./images/desctop/portfolio/portfolio1.webp 1x, ./images/desctop/portfolio/portfolio1@2x.webp 2x"
+   media="(min-width: 768px)" type="image/webp">         
+    <img src="./images/img.jpg" alt="Веб-сайт Технокряк" width="370">
+ </picture>   
 <div class="card-thumb__text"><p class="text">Технокряк это современная площадка распостранения коронавируса.
 Компании используют эту платформу для цифрового шпионажа
  и атак на защищенные сервера конкурентов.</p></div></div> 
@@ -232,5 +288,6 @@ rel="stylesheet"/>
 </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

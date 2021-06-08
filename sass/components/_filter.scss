@@ -5,8 +5,32 @@
 
 .filters__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.filters__list {
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filters__item {
+  @media screen and (max-width: 479.98px) {
+    margin-bottom: 15px;
+  }
+}
+
+.filters__item:nth-child(-n + 3) {
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filters__item:not(:last-child) {

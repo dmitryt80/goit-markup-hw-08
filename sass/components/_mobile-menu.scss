@@ -2,6 +2,21 @@
   display: none;
 }
 
+.mobile-menu.is-open {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 83px 48px 40px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
 .mobile-menu__nav {
   font-size: 40px;
   font-weight: 500;
@@ -13,15 +28,13 @@
   margin-bottom: 32px;
 }
 
-.mobile-menu__button-icon-cross {
-  display: none;
+.mobile-menu__nav-link--current {
+  color: var(--accent-color);
 }
 
-.mobile-menu__button-icon-menu,
-.mobile-menu__button-icon-cross {
-  width: 40px;
-  height: 40px;
-  fill: var(--title-color);
+.mobile-menu__nav-link {
+  color: var(--title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__button {
@@ -36,12 +49,87 @@
   position: absolute;
   top: 18%;
   right: 3%;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.mobile-menu__button.is-open.icon-cross {
+.mobile-menu__button.is-open {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+}
+
+.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+
+.is-open .menu-button__icon-cross {
   display: block;
 }
 
-.mobile-menu__button.is-open.icon-menu {
-  display: none;
+.menu-button__icon-menu,
+.menu-button__icon-cross {
+  fill: var(--title-color);
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-item--phone {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contacts-link--phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__contacts-link--phone {
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+  }
+}
+
+.mobile-menu__contacts-link--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mobile-menu__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-menu__socials-item {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+  }
+}
+
+.mobile-menu__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__socials-decore {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 22px;
 }
