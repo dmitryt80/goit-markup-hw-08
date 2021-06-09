@@ -100,7 +100,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1268,10 +1268,52 @@ textarea:focus {
   margin-top: -30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .card-set {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .card-set__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.card-set__item {
+  display: block;
+}
+
+@media screen and (max-width: 767.98px) {
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
 
 .card {
@@ -1347,8 +1389,8 @@ textarea:focus {
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: flex;
     align-items: baseline;
+    flex-direction: row;
   }
 }
 
@@ -1360,6 +1402,13 @@ textarea:focus {
   .footer__adaptive-wrapper {
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__adaptive-wrapper {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1395,6 +1444,13 @@ textarea:focus {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-left: 70px;
+    align-items: flex-start;
+  }
+}
+
 .footer__socials-text {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -1416,6 +1472,13 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: auto;
+    align-items: flex-start;
+  }
 }
 
 .footer__subscribe-content {
@@ -1456,6 +1519,14 @@ textarea:focus {
   .footer__subscribe-input {
     width: 450px;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
