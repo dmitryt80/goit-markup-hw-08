@@ -35,6 +35,13 @@
   padding: 40px;
 }
 
+.modal {
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .modal-button {
   position: absolute;
   top: 8px;
@@ -55,13 +62,4 @@
 .modal-button:hover,
 .icon-close .modal-button:focus .icon-close {
   fill: var(--accent-color);
-}
-
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--title-color);
-  margin-bottom: 12px;
 }
