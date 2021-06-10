@@ -599,7 +599,7 @@ a {
 
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .form-input {
-    width: 370px;
+    max-width: 370px;
   }
 }
 
@@ -627,19 +627,7 @@ a {
   outline: none;
 }
 
-/*.form__comment {
-  position: relative;
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 12px 16px;
-  margin-top: 4px;
-  transition: border var(--standard-animation);
-  resize: none;
-}*/
-.form-textarea {
+.textarea {
   padding: 12px 16px;
   margin-top: 4px;
   margin-bottom: 20px;
@@ -657,11 +645,11 @@ a {
 }
 
 input:focus,
-.form__textarea:focus {
+.textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
-.form__textarea::placeholder {
+.textarea::placeholder {
   color: var(--input-placeholder);
 }
 
@@ -744,12 +732,11 @@ input:focus,
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-height: 100vh;
   background-color: var(--page-title);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -759,6 +746,13 @@ input:focus,
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
