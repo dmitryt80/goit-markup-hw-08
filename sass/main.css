@@ -51,7 +51,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -438,7 +438,7 @@ a {
 }
 
 .mobile-menu.is-open {
-  z-index: 100;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +482,7 @@ a {
 }
 
 .mobile-menu__button {
-  z-index: 50;
+  z-index: 0;
   padding: 0;
   margin: 0;
   width: 40px;
