@@ -177,7 +177,7 @@ a {
   border-radius: 2px;
 }
 
-.form__checkbox:checked + .form__policy-label::before {
+.form__checkbox:checked + .icon::before {
   background-image: url(../images/icons/svg/icon-check.svg);
   background-repeat: no-repeat;
   background-color: var(--accent-color);
@@ -187,15 +187,6 @@ a {
   background-origin: border-box;
 }
 
-/*.form__checkbox:checked + .icon {
-  background-image: url(../images/icons/svg/icon-check.svg);
-  background-repeat: no-repeat;
-  background-color: var(--accent-color);
-  background-position: center;
-  background-size: contain;
-  border-color: var(--accent-color);
-  background-origin: border-box;
-}*/
 .form__checkbox:focus-within + .icon {
   border-color: var(--accent-color);
 }
