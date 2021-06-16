@@ -1,6 +1,10 @@
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .features__title {
@@ -11,6 +15,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .main-block {
@@ -51,6 +56,7 @@
 
 .features__block-icons {
   display: flex;
+  height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;

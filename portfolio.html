@@ -13,7 +13,7 @@ rel="stylesheet"/>
 </head>
 <body>
 <!--Шапка сайта-->
-<header class="page-header">
+<header class="header">
     <div class="container header__container">      
     <nav class="nav header__nav">
         <a class="logo header__logo" href="/">
@@ -91,7 +91,8 @@ rel="stylesheet"/>
 </div>
 <main>
   <!--Секция фильтр с кнопками-->
-  <section class="section-portfolio"> 
+  <section class="section-portfolio">
+  <div class="container">     
  <div class="filters">   
 <ul class="list filters__list">
     <li class="filters__item"><button class="buttons" type="button">Все</button></li>
@@ -99,7 +100,7 @@ rel="stylesheet"/>
     <li class="filters__item"><button class="buttons" type="button">Приложения</button></li>
     <li class="filters__item"><button class="buttons" type="button">Дизайн</button></li>
     <li class="filters__item"><button class="buttons" type="button">Маркетинг</button></li>
-</ul>
+</ul></div>
 <!--Секция Портфолио-->
 <ul class="list card-set">
     <li class="card-set__item"><article class="card"><a href="" class="card__link">
@@ -349,6 +350,7 @@ rel="stylesheet"/>
 </article>        
     </li>
 </ul>
+
 </div>
 </section>
 </main>
@@ -357,7 +359,7 @@ rel="stylesheet"/>
     <div class="container footer__container">
     <div class="footer__adaptive-wrapper">
     <div class="footer__contacts-wrapper">        
-    <a class="logo" href="/">
+    <a class="link logo footer__logo" href="/">
        <span class="logo-blue">Web</span><span class="logo-white footer__logo-white--color">Studio</span>
     </a>
     <address>
