@@ -1,4 +1,4 @@
-.icon {
+.form__icon {
   position: relative;
   display: inline-block;
   width: 16px;
@@ -7,7 +7,7 @@
   border-radius: 2px;
 }
 
-.form__checkbox:checked + .icon::before {
+.form__policy-checkbox:checked + .form__icon {
   background-image: url(../images/icons/svg/icon-check.svg);
   background-repeat: no-repeat;
   background-color: var(--accent-color);
@@ -17,6 +17,6 @@
   background-origin: border-box;
 }
 
-.form__checkbox:focus-within + .icon {
+.form__policy-checkbox:focus-within + .form__icon {
   border-color: var(--accent-color);
 }

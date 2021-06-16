@@ -130,19 +130,6 @@ input:focus,
   margin-bottom: 20px;
 }
 
-.form__policy-label::before {
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 16px;
-  border: 1px solid #212121;
-  border-radius: 3px;
-  margin-right: 8px;
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .form__policy-label {
   @media screen and (max-width: 1199.98px) {
     font-size: 12px;
