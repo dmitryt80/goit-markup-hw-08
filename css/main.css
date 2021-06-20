@@ -82,7 +82,6 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -913,7 +912,7 @@ input:focus,
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -965,7 +964,7 @@ input:focus,
 
 @media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/Hero@2x.jpg);
   }
 }
 
@@ -1036,6 +1035,7 @@ input:focus,
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
@@ -1148,6 +1148,17 @@ input:focus,
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--section-background);
+}
+
+.section-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
 }
 
 .team__card-set {
