@@ -15,6 +15,12 @@
 }
 
 .hero {
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+}
+
+.hero {
   @media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,

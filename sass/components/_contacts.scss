@@ -22,7 +22,12 @@
 
 .contacts {
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.18;
     flex-direction: row;
+    margin-top: 25px;
+    margin-right: 40px;
   }
 }
 
