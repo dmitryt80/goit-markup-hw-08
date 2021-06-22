@@ -218,7 +218,7 @@ a {
     font-weight: 500;
     line-height: 1.18;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 40px;
   }
 }
@@ -288,6 +288,12 @@ a {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .filters__list {
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -930,20 +936,20 @@ input:focus,
 
 .header {
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 
 .header__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   display: flex;
-  align-items: center;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .header__container {
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 18px;
   }
 }
 
@@ -1058,6 +1064,12 @@ input:focus,
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
+}
+
 .features__main-block {
   display: block;
 }
@@ -1116,7 +1128,8 @@ input:focus,
 }
 
 .section-what-we-do {
-  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1198px) {
@@ -1181,6 +1194,14 @@ input:focus,
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team__card-set {
@@ -1280,6 +1301,15 @@ input:focus,
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .logo-clients {
@@ -1309,6 +1339,7 @@ input:focus,
 @media screen and (min-width: 1200px) {
   .logo-clients__item {
     margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 30px * 6) / 6);
   }
 }
@@ -1416,6 +1447,10 @@ input:focus,
     margin-left: 30px;
     flex-basis: calc((100% - 30px * 3) / 3);
   }
+}
+
+.card-set__photo {
+  width: 100%;
 }
 
 .card {

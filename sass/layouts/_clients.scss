@@ -18,6 +18,15 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.clients__title {
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .logo-clients {
@@ -47,6 +56,7 @@
 .logo-clients__item {
   @media screen and (min-width: 1200px) {
     margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 30px * 6) / 6);
   }
 }

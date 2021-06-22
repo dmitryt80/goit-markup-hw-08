@@ -22,6 +22,12 @@
   margin-bottom: 10px;
 }
 
+.features__title {
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
 .features__main-block {
   display: block;
 }
