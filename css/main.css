@@ -1130,7 +1130,7 @@ input:focus,
 
 .section-what-we-do {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1198px) {
@@ -1186,6 +1186,13 @@ input:focus,
   background-color: var(--section-background);
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199.98px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section-title {
   font-family: Roboto;
   font-style: normal;
@@ -1195,6 +1202,7 @@ input:focus,
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1276,6 +1284,7 @@ input:focus,
 
 .team__name {
   font-family: var(--title-font);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -1308,7 +1317,7 @@ input:focus,
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1381,6 +1390,13 @@ input:focus,
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .section-portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .container-background {
   background-color: var(--page-title);
   padding: 24px 20px;
@@ -1422,12 +1438,6 @@ input:focus,
     margin-top: -30px;
     margin-left: -30px;
   }
-}
-
-.card-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .card-set__item {
@@ -1527,8 +1537,8 @@ input:focus,
   .footer {
     display: flex;
     background-color: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 }
 
